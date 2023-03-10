@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 837329809}
   - component: {fileID: 837329808}
   - component: {fileID: 837329807}
-  - component: {fileID: 837329806}
+  - component: {fileID: 837329811}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -237,35 +237,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &837329806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837329805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaf94c87468197b4a95aa8cf2e706fa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerControl:
-    m_Name: Player Control
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0d4ce88b-e3eb-48d6-8db5-44a1a122d028
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 0b463dfb-6f68-4485-9dcd-400cb50e2726
-      m_Path: <HID::Thrustmaster Thrustmaster T80>/rx
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Control
-      m_Flags: 0
-    m_Flags: 0
 --- !u!65 &837329807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -344,6 +315,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &837329811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837329805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf94c87468197b4a95aa8cf2e706fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.1
+  playerControls:
+    m_Name: Player Controls
+    m_Type: 0
+    m_ExpectedControlType: Axis
+    m_Id: d1cfd4ac-456c-4714-a5c4-944580d2ca53
+    m_Processors: Clamp(max=1)
+    m_Interactions: Hold
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: c3375fd5-fe63-42ca-aff0-b2c84d0b6e2f
+      m_Path: <HID::Thrustmaster Thrustmaster T80>/rx
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Controls
+      m_Flags: 0
+    m_Flags: 0
+  current: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
