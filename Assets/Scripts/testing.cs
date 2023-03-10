@@ -5,16 +5,16 @@ using UnityEngine.InputSystem;
 
 public class testing : MonoBehaviour
 {
-    public Rigidbody rb;
     public float moveSpeed = 5f;
+    public InputControl inputControl;
     public InputAction playerControls;
 
-    [SerializeField]
+    public float current;
 
 
-    // Start is called before the first frame update
 
-    Vector3 moveDirection = Vector3.zero;
+
+    // Start is called before the first frame updat
 
     private void OnEnable()
     {
@@ -27,17 +27,17 @@ public class testing : MonoBehaviour
     }
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        moveDirection = playerControls.ReadValue<Vector2>();
+
+        current = playerControls.ReadValue<float>();
+
+        transform.Translate(current * moveSpeed, 0, 0);
+
     }
 
-    private void FixedUpdate()
-    {
-        rb.velocity = new Vector3(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
-    }
 }

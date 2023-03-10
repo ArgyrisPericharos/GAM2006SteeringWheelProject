@@ -36,7 +36,7 @@ public class AxisMovementTest : MonoBehaviour
 
         current = playerControls.ReadValue<float>();
 
-        transform.Translate(current * moveSpeed, 0, 0);
+        transform.Rotate(0, current * moveSpeed, 0);
         
     }
 
