@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45034242, g: 0.4980709, b: 0.56299216, a: 1}
+  m_IndirectSpecularColor: {r: 0.45034206, g: 0.4980703, b: 0.5629915, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-34748
+  m_Name: pb_Mesh24500
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -535,7 +535,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: fc0cfe02-0514-4bd9-883c-86190e361069
-      m_Path: <HID::Thrustmaster Thrustmaster T80>/button6
+      m_Path: <HID::Thrustmaster Thrustmaster T80 (USB)>/button6
       m_Interactions: 
       m_Processors: 
       m_Groups: 

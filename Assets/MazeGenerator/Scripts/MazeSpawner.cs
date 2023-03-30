@@ -98,7 +98,7 @@ public class MazeSpawner : MonoBehaviour {
 			}
 		}
 
-		Rotatable.transform.Rotate(-90, 0, 0);
+		//Rotatable.transform.Rotate(-90, 0, 0);
 		
 	}
 }
