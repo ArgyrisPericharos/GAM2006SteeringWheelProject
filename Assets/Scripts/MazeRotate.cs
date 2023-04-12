@@ -30,6 +30,6 @@ public class MazeRotate : MonoBehaviour
     {
         current = playerControls.ReadValue<float>();
 
-        transform.Rotate(0, current * moveSpeed, 0);
+        gameObject.transform.Rotate(0, current * moveSpeed, 0);
     }
 }

@@ -36,7 +36,28 @@ public class testing : MonoBehaviour
 
         current = playerControls.ReadValue<float>();
 
-        transform.Translate(current * moveSpeed, 0, 0);
+       /* if (current != 0)
+        {
+            transform.Translate(0, 0, 0);
+        }
+        */
+        if (current == 1)
+        {
+            transform.Translate(0, 0, 0);
+        }
+
+        if (current <= 0.9) 
+        {
+            transform.Translate(1 * moveSpeed * Time.deltaTime, 0, 0);
+        }
+
+        if (current <= -0.85)
+        {
+            transform.Translate(1.5f * moveSpeed * Time.deltaTime, 0, 0);
+            //Debug.Log("ivegonemaximum");
+        }
+
+        //transform.Translate(current * moveSpeed, 0, 0);
 
     }
 
