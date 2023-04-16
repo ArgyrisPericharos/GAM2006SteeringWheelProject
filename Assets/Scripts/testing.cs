@@ -53,7 +53,7 @@ public class testing : MonoBehaviour
 
         if (current <= -0.85)
         {
-            transform.Translate(1.5f * moveSpeed * Time.deltaTime, 0, 0);
+            transform.Translate(1.25f * moveSpeed * Time.deltaTime, 0, 0);
             //Debug.Log("ivegonemaximum");
         }
 
